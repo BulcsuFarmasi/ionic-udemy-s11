@@ -12,7 +12,6 @@ import { UsersService } from '../users.service';
         <p *ngFor="let user of users">{{ user }}</p>
         <p [ngStyle]="{'background-color': color}">This is green!</p>
     `,
-    providers: [UsersService]
 })
 export class UsersComponent {
     showInfo = false;
