@@ -9,4 +9,4 @@
 <button (click)="setAge(30)">Click me!</button>
 <input type="text" [(ngModel)]="person.name" />
 <hr />
-<app-users></app-users>
+<app-users [users]="registredUsers" (alertTrown)="onChildAlert($event)"></app-users>

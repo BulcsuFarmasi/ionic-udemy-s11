@@ -11,7 +11,8 @@ export class AppComponent {
   person = {
     name: 'Bulcsú',
     age: 25
-  }
+  };
+  registredUsers = ['Bulcsú', 'Dorka', 'Csenge'];
 
   getName () {
     return 'Bulcsú';
@@ -19,5 +20,9 @@ export class AppComponent {
 
   setAge (age: number) {
     this.age = age;
+  }
+
+  onChildAlert(message:string) {
+    alert(message);
   }
 }
