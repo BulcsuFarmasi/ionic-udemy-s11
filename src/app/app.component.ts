@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  age = 25;
+  person = {
+    name: 'Bulcsú',
+    age: 25
+  }
+
+  getName () {
+    return 'Bulcsú';
+  }
 }

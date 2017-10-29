@@ -1,5 +1,11 @@
 <h1>
   {{title}}
 </h1>
+<p>{{ age }}</p>
+<p>{{ person.name }} - {{ person.age }}</p>
+<input type="text" [value]="age" />
+<p>{{ getName() }}</p>
+<input type="text" [value]="getName()" />
+<button (click)="age = 30">Click me!</button>
 <hr />
 <app-users></app-users>
