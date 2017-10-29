@@ -8,5 +8,7 @@
 <input type="text" [value]="getName()" />
 <button (click)="setAge(30)">Click me!</button>
 <input type="text" [(ngModel)]="person.name" />
+<p *ngFor="let user of users">{{ user }}</p>
 <hr />
-<app-users [users]="registredUsers" (alertTrown)="onChildAlert($event)"></app-users>
+<!--<app-users [users]="registredUsers" (alertTrown)="onChildAlert($event)"></app-users>-->
+<app-users (alertTrown)="onChildAlert($event)"></app-users>
