@@ -16,4 +16,8 @@ export class AppComponent {
   getName () {
     return 'Bulcsú';
   }
+
+  setAge (age: number) {
+    this.age = age;
+  }
 }

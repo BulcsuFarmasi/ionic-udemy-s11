@@ -6,6 +6,7 @@
 <input type="text" [value]="age" />
 <p>{{ getName() }}</p>
 <input type="text" [value]="getName()" />
-<button (click)="age = 30">Click me!</button>
+<button (click)="setAge(30)">Click me!</button>
+<input type="text" [(ngModel)]="person.name" />
 <hr />
 <app-users></app-users>
